@@ -8,7 +8,8 @@ pipeline {
         }
         stage('build') {
             steps {
-                sh -x 'Build_AlsaLoopAppLinuxHost/build.sh'
+                sh -x '/var/lib/jenkins/workspace/Build_AlsaLoopAppLinuxHost/build.sh'
+                
             }
         }
     }
