@@ -1,2 +1,2 @@
 #!/bin/sh
-gcc -Wall -o playback main.c -lasound -lm
+gcc -Wall -Werror -std=c11 -pedantic -o playback main.c -lasound -lm
