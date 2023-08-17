@@ -8,8 +8,8 @@ pipeline {
         }
         stage('build') {
             steps {
+                chmod 0755 '${workspace}/Build_AlsaLoopAppLinuxHost/build.sh'
                 sh -x '${workspace}/Build_AlsaLoopAppLinuxHost/build.sh'
-                
             }
         }
     }
