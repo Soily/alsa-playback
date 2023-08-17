@@ -8,7 +8,7 @@ pipeline {
         }
         stage('build') {
             steps {
-                sh 'build.sh'
+                sh -x $WORKSPACE/Build_AlsaLoopAppLinuxHost/build.sh
             }
         }
     }
